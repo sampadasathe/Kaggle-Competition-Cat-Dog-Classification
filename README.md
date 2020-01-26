@@ -1,7 +1,7 @@
 # Kaggle-Competition-Cat-Dog-Classification
 Kaggle Competition: Dogs vs. Cats Redux: Kernels Edition with 99% classification accuracy
 
-Since Cat Dog Classification is an image classification problem, it can be solved using Transfer Learning. 
+Since Cat Dog Classification is an image classification problem, it can be solved using Transfer Learning. I have used pretrained VGG16 as a classifier because it achieves top-5 accuracy of 92.3% on imagenet. Also, since the VGG16 architecture is not very complex, its a good basic model to learn about convolutional networks and image classification in general.
 
 ## Transfer Learning
 In computer vision, transfer learning is usually expressed through the use of pre-trained models. A pre-trained model is a model that was trained on a large benchmark dataset to solve a problem similar to the one that we want to solve. Accordingly, due to the computational cost of training such models, it is common practice to import and use models from published literature (e.g. VGG, Inception, MobileNet). A comprehensive review of pre-trained models’ performance on computer vision problems using data from the ImageNet (Deng et al. 2009) challenge is presented by Canziani et al. (2016).
