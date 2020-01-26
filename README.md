@@ -1,5 +1,6 @@
-# Kaggle-Competition-Cat-Dog-Classification
+# Kaggle-Competition: Cat Dog Classification using Google Colab
 Kaggle Competition: Dogs vs. Cats Redux: Kernels Edition with 99% classification accuracy
+https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/overview
 
 Since Cat Dog Classification is an image classification problem, it can be solved using Transfer Learning. I have used pretrained VGG16 as a classifier because it achieves top-5 accuracy of 92.3% on imagenet. Also, since the VGG16 architecture is not very complex, its a good basic model to learn about convolutional networks and image classification in general.
 
@@ -16,3 +17,12 @@ Three Fully-Connected (FC) layers follow a stack of convolutional layers (which 
 
 All hidden layers are equipped with the rectification (ReLU) non-linearity. It is also noted that none of the networks (except for one) contain Local Response Normalisation (LRN), such normalization does not improve the performance on the ILSVRC dataset, but leads to increased memory consumption and computation time.
 ![VGG16 Architecture](https://github.com/sampadasathe/Kaggle-Competition-Cat-Dog-Classification/blob/master/vgg16-neural-network.jpg)
+
+## Improve model accuracy by training last 4 layers and using regularization
+
+
+#### References
+1. https://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
+2. https://neurohive.io/en/popular-networks/vgg16/
+3. https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751
+4. https://medium.com/udacity-pytorch-challengers/why-use-a-pre-trained-model-rather-than-creating-your-own-d0e3a17e202f
