@@ -19,8 +19,7 @@ All hidden layers are equipped with the rectification (ReLU) non-linearity. It i
 ![VGG16 Architecture](https://github.com/sampadasathe/Kaggle-Competition-Cat-Dog-Classification/blob/master/vgg16-neural-network.jpg)
 
 ## Improve model accuracy by training last 4 layers and using regularization
-
-
+Now that we have understood
 #### References
 1. https://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
 2. https://neurohive.io/en/popular-networks/vgg16/
