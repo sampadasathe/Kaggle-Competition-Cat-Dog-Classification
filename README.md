@@ -26,7 +26,7 @@ But, now let’s consider we are dealing with images. In this case, there are a 
 ## Improve model accuracy by training last 4 layers and using regularization
 Model accuracy improved when I trained the last 4 layers of VGG16. In deep learning, regularization actually penalizes the weight matrices of the nodes.
 In L2, we have:
-![L2 Regularization](https://github.com/sampadasathe/Kaggle-Competition-Cat-Dog-Classification/blob/master/L2 regularization.jpg)
+![L2 Regularization](https://github.com/sampadasathe/Kaggle-Competition-Cat-Dog-Classification/blob/master/vgg16-neural-network.jpg)
 
 
 Here, lambda is the regularization parameter. It is the hyperparameter whose value is optimized for better results. L2 regularization is also known as weight decay as it forces the weights to decay towards zero (but not exactly zero).
