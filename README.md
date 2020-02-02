@@ -18,10 +18,22 @@ Three Fully-Connected (FC) layers follow a stack of convolutional layers (which 
 All hidden layers are equipped with the rectification (ReLU) non-linearity. It is also noted that none of the networks (except for one) contain Local Response Normalisation (LRN), such normalization does not improve the performance on the ILSVRC dataset, but leads to increased memory consumption and computation time.
 ![VGG16 Architecture](https://github.com/sampadasathe/Kaggle-Competition-Cat-Dog-Classification/blob/master/vgg16-neural-network.jpg)
 
+## Data Augmentation
+The simplest way to reduce overfitting is to increase the size of the training data. In machine learning, we were not able to increase the size of training data as the labeled data was too costly.
+
+But, now let’s consider we are dealing with images. In this case, there are a few ways of increasing the size of the training data – rotating the image, flipping, scaling, shifting, etc. This technique is known as data augmentation. This usually provides a big leap in improving the accuracy of the model. It can be considered as a mandatory trick in order to improve our predictions.
+
 ## Improve model accuracy by training last 4 layers and using regularization
-Now that we have understood
+Model accuracy improved when I trained the last 4 layers of VGG16. In deep learning, regularization actually penalizes the weight matrices of the nodes.
+In L2, we have:
+
+
+
+Here, lambda is the regularization parameter. It is the hyperparameter whose value is optimized for better results. L2 regularization is also known as weight decay as it forces the weights to decay towards zero (but not exactly zero).
+
 #### References
 1. https://cv-tricks.com/cnn/understand-resnet-alexnet-vgg-inception/
 2. https://neurohive.io/en/popular-networks/vgg16/
 3. https://towardsdatascience.com/transfer-learning-from-pre-trained-models-f2393f124751
 4. https://medium.com/udacity-pytorch-challengers/why-use-a-pre-trained-model-rather-than-creating-your-own-d0e3a17e202f
+5. https://www.analyticsvidhya.com/blog/2018/04/fundamentals-deep-learning-regularization-techniques/
